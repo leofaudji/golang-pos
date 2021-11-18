@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	helmet "github.com/danielkov/gin-helmet"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-contrib/gzip"
@@ -40,6 +42,7 @@ func main() {
 	routes.NewRouteTransaction(db, app)
 	routes.NewRouteUser(db, app)
 
+	coba()
 	/**
 	* ========================
 	*  Listening Server Port
@@ -116,4 +119,8 @@ func setupApp() *gin.Engine {
 	}))
 
 	return app
+}
+
+func coba() {
+	fmt.Println("cobaa")
 }

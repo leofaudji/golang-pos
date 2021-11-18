@@ -10,7 +10,7 @@ Example Golang API backend rest implementation mini project Point Of Sale using 
 $ go run main.go || make go run
 ```
 
-- ### Docker Lifecycle
+- ### Docker Lifecycle 
 
 ```sh
 $ docker-compose up -d --build
